@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <form id="form">
+            Nama : <input type="text" id="nama"/><br><br>
+            Jurusan : <select id="jurusan">
+                <option value="ppl">Pengembangan Perangkat Lunak</option>
+                <option value="dm">Digital Marketing</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Kirim"/>
+        </form>
+        <br>
+        <script>
+            function tampil(){
+                let nama = document.getElementById("nama").value;
+                let jurusan = document.getElementById("jurusan").value;
+            
+                document.write("Nama          : "+nama+"<br>")
+                document.write("jurusan       : "+jurusan+"<br>")
+        
+            }
+            document.getElementById("form").onsubmit=tampil
+        
+    </script>
+    </body>
+</html>
